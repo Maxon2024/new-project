@@ -43,45 +43,59 @@ class _MyHomePageState extends State<MyHomePage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Container(
-                width: 800,
-                height: 50,
-                color: Colors.white,
-                child: Text(
-                  'Логин и почта',
-                  style: const TextStyle(fontSize: 20),
-                ),
-              ),
-              Container(
-                child: Text(
-                  'Пароль',
-                  style: const TextStyle(fontSize: 20),
-                ),
-                width: 800,
-                height: 50,
-                color: Colors.white,
-              ),
-              Container(
-                child: Center(
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  width: 800,
+                  height: 50,
+                  color: Colors.white,
                   child: Text(
-                    'Войти',
-                    style: const TextStyle(fontSize: 20),
+                    'Логин и почта',
+                    style: TextStyle(fontSize: 20),
                   ),
                 ),
-                width: 800,
-                height: 50,
-                color: Colors.blue,
               ),
-              Container(
-                child: Center(
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
                   child: Text(
-                    'Зарегистрироваться',
+                    'Пароль',
                     style: const TextStyle(fontSize: 20),
                   ),
+                  width: 800,
+                  height: 50,
+                  color: Colors.white,
                 ),
-                width: 800,
-                height: 50,
-                color: Colors.blue,
+              ),
+              SizedBox(height: 20),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  child: Center(
+                    child: Text(
+                      'Войти',
+                      style: const TextStyle(fontSize: 20),
+                    ),
+                  ),
+                  width: 800,
+                  height: 50,
+                  color: Colors.blue,
+                ),
+              ),
+              SizedBox(height: 5),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  child: Center(
+                    child: Text(
+                      'Зарегистрироваться',
+                      style: const TextStyle(fontSize: 20),
+                    ),
+                  ),
+                  width: 800,
+                  height: 50,
+                  color: Colors.blue,
+                ),
               ),
             ],
           ),
