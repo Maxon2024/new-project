@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_7/pages.dart';
 
 void main() {
   runApp(const MyApp());
@@ -37,7 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Colors.grey,
         appBar: AppBar(
           title: Center(
-              child: Text('Авторизация', style: TextStyle(fontSize: 30))),
+              child: Text('Авторизация', style: TextStyle(fontSize: 20))),
         ),
         body: Center(
           child: Column(
@@ -70,16 +71,22 @@ class _MyHomePageState extends State<MyHomePage> {
               SizedBox(height: 20),
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Container(
-                  child: Center(
-                    child: Text(
-                      'Войти',
-                      style: const TextStyle(fontSize: 20),
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: ((context) => Home())));
+                  },
+                  child: Container(
+                    child: Center(
+                      child: Text(
+                        'Войти',
+                        style: const TextStyle(fontSize: 20),
+                      ),
                     ),
+                    width: 800,
+                    height: 50,
+                    color: Colors.blue,
                   ),
-                  width: 800,
-                  height: 50,
-                  color: Colors.blue,
                 ),
               ),
               SizedBox(height: 5),
