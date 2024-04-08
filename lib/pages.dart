@@ -20,10 +20,7 @@ class _HomeState extends State<Home> {
           ),
         ),
       ),
-    );
-  }
-}
-bottomNavigationBar: Container(
+      bottomNavigationBar: Container(
         width: double.infinity,
         height: 60,
         color: Colors.white,
@@ -41,3 +38,6 @@ bottomNavigationBar: Container(
           ],
         ),
       ),
+    );
+  }
+}
