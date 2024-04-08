@@ -23,3 +23,21 @@ class _HomeState extends State<Home> {
     );
   }
 }
+bottomNavigationBar: Container(
+        width: double.infinity,
+        height: 60,
+        color: Colors.white,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(Icons.badge_rounded),
+            Icon(Icons.map),
+            Icon(Icons.favorite_sharp),
+            Icon(Icons.portrait_rounded),
+            Text('Лента'),
+            Text('Карта'),
+            Text('Избранные'),
+            Text('Профиль'),
+          ],
+        ),
+      ),
